@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Gallery</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            padding: 50px;
+            background: linear-gradient(to right, #a388bb, #3dc2b0);
+            color: white;
+            animation: fadeIn 1.5s ease-in-out;
+        }
+
+        h1 {
+            color: white;
+            font-size: 36px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .gallery-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 15px;
+            max-width: 900px;
+            margin: auto;
+        }
+
+        .gallery-container img {
+            width: 200px;
+            height: 150px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .gallery-container img:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        a {
+            color: white;
+            background: #ff3d00;
+            padding: 12px 25px;
+            text-decoration: none;
+            border-radius: 5px;
+            display: inline-block;
+            margin-top: 20px;
+            font-size: 18px;
+            transition: background 0.3s;
+        }
+
+        a:hover {
+            background: #ff7043;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            body {
+                padding: 30px;
+            }
+
+            h1 {
+                font-size: 28px;
+            }
+
+            .gallery-container img {
+                width: 80%;
+                height: auto;
+            }
+
+            a {
+                font-size: 16px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Gallery</h1>
+
+    <div class="gallery-container">
+        <img src="q.jpg" alt="Image 1">
+        <img src="w.jpg" alt="Image 2">
+        <img src="e.webp" alt="Image 3">
+        <img src="r.jpg" alt="Image 4">
+        <img src="t.jpg" alt="Image 5">
+        <img src="y.jpg" alt="Image 6">
+        <img src="u.jpg" alt="Image 7">
+        <img src="i.jpg" alt="Image 8">
+        <img src="o.jpg" alt="Image 9">
+        <img src="p.jpg" alt="Image 10">
+    </div>
+
+    <br>
+
+    <a href="Main.html">Back to Home</a>
+
+</body>
+</html>
